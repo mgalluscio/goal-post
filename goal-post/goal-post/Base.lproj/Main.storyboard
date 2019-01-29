@@ -137,18 +137,39 @@
                                                         </stackView>
                                                     </subviews>
                                                 </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RDu-IN-1TI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL COMPLETE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkm-RJ-1bZ">
+                                                            <rect key="frame" x="56.5" y="14.5" width="262.5" height="41"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.91764705882352937" green="0.66274509803921566" blue="0.26666666666666666" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="rkm-RJ-1bZ" firstAttribute="centerX" secondItem="RDu-IN-1TI" secondAttribute="centerX" id="ZJI-oz-4hE"/>
+                                                        <constraint firstItem="rkm-RJ-1bZ" firstAttribute="centerY" secondItem="RDu-IN-1TI" secondAttribute="centerY" id="y7S-UB-nVz"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="5O4-7I-hvK" secondAttribute="bottom" id="B5H-ew-nUI"/>
+                                                <constraint firstAttribute="bottom" secondItem="RDu-IN-1TI" secondAttribute="bottom" id="MPz-g8-RQo"/>
+                                                <constraint firstItem="RDu-IN-1TI" firstAttribute="top" secondItem="Z0B-FN-mgV" secondAttribute="top" id="N2Q-Xn-68r"/>
                                                 <constraint firstAttribute="trailing" secondItem="iS8-tm-cGE" secondAttribute="trailing" constant="8" id="Tr6-N7-oCi"/>
                                                 <constraint firstItem="5O4-7I-hvK" firstAttribute="leading" secondItem="Z0B-FN-mgV" secondAttribute="leadingMargin" constant="10" id="VJX-Oi-ykO"/>
                                                 <constraint firstItem="iS8-tm-cGE" firstAttribute="leading" secondItem="5O4-7I-hvK" secondAttribute="trailing" constant="10" id="iMt-gN-hmY"/>
                                                 <constraint firstItem="iS8-tm-cGE" firstAttribute="top" secondItem="Z0B-FN-mgV" secondAttribute="top" constant="8" id="jLV-hW-Odk"/>
+                                                <constraint firstAttribute="trailing" secondItem="RDu-IN-1TI" secondAttribute="trailing" id="jiO-km-wYM"/>
                                                 <constraint firstItem="5O4-7I-hvK" firstAttribute="top" secondItem="Z0B-FN-mgV" secondAttribute="topMargin" id="rsh-QL-4rh"/>
+                                                <constraint firstItem="RDu-IN-1TI" firstAttribute="leading" secondItem="Z0B-FN-mgV" secondAttribute="leading" id="xWb-oy-PTB"/>
                                                 <constraint firstAttribute="bottom" secondItem="iS8-tm-cGE" secondAttribute="bottom" constant="8" id="yNy-yt-aOb"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="completionView" destination="RDu-IN-1TI" id="vb2-Kh-Hix"/>
                                             <outlet property="goalDescription" destination="aTE-Ul-kmH" id="XGc-Xe-ehQ"/>
                                             <outlet property="goalProgress" destination="iS8-tm-cGE" id="HTt-CJ-lrx"/>
                                             <outlet property="goalType" destination="YA3-wK-bQE" id="sdW-Ja-yuq"/>
